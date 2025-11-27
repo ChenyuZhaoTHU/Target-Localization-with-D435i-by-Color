@@ -12,15 +12,15 @@ import os
 from timeit import default_timer as timer
 
 import numpy as np
-from keras import backend as K
-from keras.models import load_model
-from keras.layers import Input
-from PIL import Image, ImageFont, ImageDraw
+# from keras import backend as K
+# from keras.models import load_model
+# from keras.layers import Input
+# from PIL import Image, ImageFont, ImageDraw
 
-from yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
-from yolo3.utils import letterbox_image
-import os
-from keras.utils import multi_gpu_model
+# from yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
+# from yolo3.utils import letterbox_image
+# import os
+# from keras.utils import multi_gpu_model
 
 import pyrealsense2 as rs
 import cv2, math
@@ -55,8 +55,8 @@ file_name = 'data_c1/'+datetime.datetime.now().strftime("%m%d-%H%M")+'c1'
 # greenUpper = (360, 200, 50)
 
 
-greenLower = (100, 43, 46)
-greenUpper = (124, 255, 255)
+greenLower = (102, 168, 85)
+greenUpper = (118, 255, 255)
 # red
 # greenLower = (0, 143, 46)
 # greenUpper = (0, 255, 255)
